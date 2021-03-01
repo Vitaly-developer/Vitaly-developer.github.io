@@ -1,0 +1,107 @@
+.get {
+    min-height: 706px;
+    padding: 77px 0 120px 0;
+    @media (max-width: 991px) {
+        min-height: 500px;
+    }
+    @media (max-width: 767px) {
+        padding: 35px 0 35px 0;
+        min-height: auto;
+    }
+    .container {
+        position: relative;
+    } 
+}
+.get__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #212529;
+    @media (max-width: 767px) {
+        text-align: center;
+    } 
+}
+.get__subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #212529;
+    margin-top: 38px;
+    @media (max-width: 991px) {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+}
+.get__descr {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #212529;
+    margin-top: 30px;
+    @media (max-width: 991px) {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+    @media (max-width: 575px) {
+       width: 200px;
+       margin: 0 auto;
+    }
+}
+.get__wrapper {
+    display: block;
+    padding-left: 515px;
+    @media (max-width: 991px) {
+        padding-left: 290px;
+    }
+    @media (max-width: 767px) {
+        padding-left: 0;
+    }
+}
+.get__item {
+    display: block;
+    width: 226px;
+    @media (max-width: 991px) {
+        width: 210px;
+    }
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
+.get__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ffdb0c;
+    margin-top: 30px;
+    border-radius: 50%;
+    @media (max-width: 991px) {
+        margin-top: 10px;
+    }
+    @media (max-width: 767px) {
+       margin: 10px auto;
+    }
+}
+.get__declaration {
+    display: block;
+    position: absolute;
+    left: -67px;
+    top: -132px;
+    @media (max-width: 991px) {
+        width: 400px;
+        top: -70px;
+    }
+    @media (max-width: 767px) {
+        display: none;
+    }
+}

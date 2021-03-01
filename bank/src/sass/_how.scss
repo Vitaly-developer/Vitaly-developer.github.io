@@ -1,0 +1,47 @@
+.how {
+    min-height: 595px;
+    background-color: #f6f6f6;
+    padding-top: 120px;
+    @media (max-width: 767px) {
+        padding: 50px 0 50px 0;
+    }
+}
+.how__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #212529;
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+}
+.how__descr {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #212529;
+    margin-top: 41px;
+    @media (max-width: 991px) {
+        font-size: 14px;
+    }
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+}
+.how__descr span {
+    color: #0c0a9b;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
+.how__item {
+    margin-top: 50px;
+    padding-right: 20px;
+}
+.how__icon img {
+    @media (max-width: 767px) {
+        display: block;
+        margin: 0 auto;
+    }
+}
+

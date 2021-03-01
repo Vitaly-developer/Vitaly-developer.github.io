@@ -1,0 +1,130 @@
+.form {
+    min-height: 884px;
+    @media (max-width: 767px) {
+        min-height: 650px;}
+    @media (max-width: 575px) {
+        min-height: auto; 
+        padding: 50px 0;  
+    }
+}
+.form__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #212529;
+    margin-top: 170px;
+    text-align: center;
+    @media (max-width: 767px) {
+        margin-top: 50px;
+    }
+    @media (max-width: 575px) {
+        margin-top: 0;
+    }
+}
+.form__online {
+    width: 610px;
+    height: 547px;
+    background-color: #f6f6f6;
+    margin: 47px auto 0;
+    padding: 40px 40px 60px 40px;
+    @media (max-width: 767px) {
+        width: 290px;
+        height: 420px;
+        padding: 10px 10px;
+    }
+}
+.form__input {
+    width: 530px;
+    height: 62px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #7f7f7f;
+    outline: none;
+    padding-left: 21px;
+    @media (max-width: 767px) {
+        width: 270px;
+        height: 50px;
+    }
+}
+.form__agree {
+    margin-top: 20px;
+}
+.form__btn {
+    margin-top: 42px;
+    width: 298px;
+    height: 62px;
+    background-color: #fedb31;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    @media (max-width: 767px) {
+        display: block;
+        margin: 30px auto;
+        width: 240px;
+        height: 50px;
+    }
+}
+.footer__agreement {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #7f7f7f;
+}
+.form__link {
+    text-decoration: underline;
+    color:#0c0a9b;
+}
+.form__check {
+    display: none;
+}
+.form__checkmark {
+    transition: background-color 0.2s linear;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    height: 21px;
+    width: 21px;
+    border: solid #cfcfcc 1px;
+    border-radius: 3px;
+    &::after {
+        position: absolute;
+        display: none;
+        content: ""; 
+        width: 6px;
+        height: 11px;
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        left: 7px;
+        bottom: 7px;
+    }
+}
+.form__label:hover .form__check+.form__checkmark {
+    background-color: #cfcfcc;
+    border: none;
+}
+
+.form__label .form__check:checked+.form__checkmark {
+    background-color: #64B65B;
+    border: none;
+}
+.form__check:checked+.form__checkmark::after {
+    display: block;
+}
+.form__label {
+    cursor: pointer;
+    position: relative;
+    padding-left: 40px;
+}
